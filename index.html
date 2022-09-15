@@ -68,7 +68,7 @@
         document.querySelector("footer div span").textContent = today.getFullYear();
         //document.getElementById("lastupdated").textContent = document.lastModified;
         const lastmodified = new Date(document.lastModified);
-        document.getElementById("lastupdated").textContent = `(${lastmodified.getDate()}/${lastmodified.getMonth()}/${lastmodified.getFUllYear()})`;
+        document.getElementById("lastupdated").textContent = `${lastmodified.getDate()}/${lastmodified.getMonth()}/${lastmodified.getFUllYear()}`;
     </script>
 </body>
 </html>
