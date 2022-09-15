@@ -37,7 +37,7 @@
 <body>
     <div id="content">
         <header>
-            <div><img src="/image/Snipaste_2022-09-15_15-18-19.jpg" alt="photo for Heath"></div>
+            <div><img src="./image/Snipaste_2022-09-15_15-18-19.jpg" alt="photo for Heath"></div>
             <div>Heath Liu</div>
         </header>
         <main>
@@ -68,7 +68,7 @@
         document.querySelector("footer div span").textContent = today.getFullYear();
         //document.getElementById("lastupdated").textContent = document.lastModified;
         const lastmodified = new Date(document.lastModified);
-        document.getElementById("lastupdated").textContent = `${lastmodified.getDate()}/${lastmodified.getMonth()}/${lastmodified.getFUllYear()}`;
+        document.getElementById("lastupdated").textContent = `${lastmodified.getDate()}/${lastmodified.getMonth()}/${lastmodified.getFullYear()}`;
     </script>
 </body>
 </html>
