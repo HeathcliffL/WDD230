@@ -7,33 +7,6 @@
     <meta name="commant">
     <title>Heath liu - home page - wdd 230</title>
     <link rel="stylesheet" href="./css/stylesheet.css">
-    <style>
-        #content{
-            margin: 0 auto;
-            width: 50%;
-        }
-        header{
-            display: grid;
-            grid-template-columns: 30% 70%;
-            background-color: rgb(3, 3, 77);
-            color: white;
-            font-size: 24pt;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            text-align: center;
-            align-items: center;
-        }
-        main{
-            font-family: 'Courier New', Courier, monospace;
-        }
-        footer{
-            background-color: rgb(3, 3, 77);
-            color: white;
-            text-align: center;
-        }
-        #datediv{
-            color: yellow;
-        }
-    </style>
 </head>
 <body>
     <div id="content">
@@ -64,12 +37,6 @@
             <div id="datediv">Last Update:<span id="lastupdated"></span></div>
         </footer>
     </div>
-    <script> //for all the js
-        const today = new Date();
-        document.querySelector("footer div span").textContent = today.getFullYear();
-        //document.getElementById("lastupdated").textContent = document.lastModified;
-        const lastmodified = new Date(document.lastModified);
-        document.getElementById("lastupdated").textContent = `${lastmodified.getDate()}/${lastmodified.getMonth()}/${lastmodified.getFullYear()}`;
-    </script>
+    <script src="./js/javascript.js"></script>
 </body>
 </html>
