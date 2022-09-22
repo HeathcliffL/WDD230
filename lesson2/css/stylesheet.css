@@ -24,3 +24,11 @@ footer{
 #datediv{
     color: yellow;
 }
+
+@media screen and (min-width: 600) {
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3,1fr); /*same and the line on the top of this line*/
+    }
+}
