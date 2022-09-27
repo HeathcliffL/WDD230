@@ -3,3 +3,8 @@
         grid-template-columns: 1fr 1fr;
       }
 }
+
+#content{
+  margin: 0 auto;
+  width: 90%;
+}
