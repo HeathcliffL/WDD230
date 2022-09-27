@@ -1,0 +1,50 @@
+body {
+font-size: 20px;
+background-color: whitesmoke;
+}
+h1, h2 {
+    font-family: 'Merienda', cursive, sans-serif;
+}
+h3, p {
+    font-family: 'Overlock', cursive, sans-serif; 
+}
+header {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: rgb(3, 3, 77);
+    color: white;
+    font-size: 24pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    align-items: center;
+}
+main{
+    font-family: 'Courier New', Courier, monospace;
+}
+main img {
+    max-width: 300px;
+    height: auto;
+}
+.columns {
+    display: block;
+    background-color: rgb(206, 177, 177);
+    text-align: center;
+    align-items: center;
+    margin:10px 10px 10px 10px ;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #modified {
+    color: #73a556;
+  }
+  footer{
+    background-color: rgb(3, 3, 77);
+    color: white;
+    text-align: center;
+}
+#datediv{
+    color: yellow;
+}
