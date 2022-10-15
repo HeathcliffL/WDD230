@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce site for Bear Lake Utah | WDD230 at BYU-I">
+    <title>Bear Lake Utah Chamber of Commerce</title>
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/small-base.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
+    <script defer src="./js/menu.js"></script>
+    <script defer src="./js/weather-api.js"></script>
+    <script defer src="./js/spotlight.js"></script>
+    
+    
+    
+   
+</head>
+<body>
+    <div id='banner'>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+      <header>
+            
+          <img class="logo" src="./images/sail-logo-blue.webp" alt="Bear Lake Chamber logo"/>
+         <div class="headings">
+          <h1>BEAR LAKE</h1>
+          <h2>Chamber of Commerce</h2>
+         </div>
+         <div class="social">
+              <a href="https://facebook.com" target="_blank">
+                  <img src="./images/facebook.png" alt="facebook logo">
+              </a>
+               <a href="https://www.linkedin.com/" target="_blank">
+                  <img src="./images/LinkedIn.png" alt="LinkedIn logo">
+              </a>
+          </div>
+        <nav>
+            <button id="hamburgerButton"><span>&#9776;</span><span>X</span></button>
+          <ul id="primaryNav">
+                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="./discover.html">Discover</a></li>           
+                <li><a href="./directory.html">Directory</a></li>
+                <li><a href="./join.html">Join</a></li> 
+                <li><a href="./contact.html">Contact</a></li> 
+            </ul>
+        </nav> 
+         </header>
+          <div class="date"></div>
+         
+     
+      
+      <main>
+          <div class="hero">
+              <picture class= "heropic">
+               <source media="(max-width: 34em)" srcset="./images/sail400.jpg">
+               <source media="(max-width: 1000px)" srcset="./images/sail600.jpg">
+               <source media="(max-width: 1050px)" srcset="./images/Sail800.jpg">
+               <img src="./images/Sail800.jpg" alt = "Sailboat on Bear Lake">
+              </picture>
+            
+           <!-- <img class="heropic" src="images/blSailBoat.JPG" alt="sail boat on bear lake"/>-->
+          
+            <section class="headerOverlay">
+                <h2>Welcome to Bear Lake</h2>
+                </section>
+                <section class="buttonOverlay">
+                <button class="joinButton" type="button" onclick="window.location.href='join.html'">Join The Chamber</button>
+                </section>
+        </div>
+          <section class="event">
+              <h3>Events</h3>
+              <h4>Monster Ice Fishing Tournament</h4>
+              <p>Join us this Friday for the biggest ice fishing tournament Bear Lake has ever hosted.  
+                  <a href="#">More Info...</a></p>
+            </section>
+          <section class="weather">
+              <h3>Weather</h3>
+              <p><span id="t"></span>&#176; F</p>
+              <span id="icon-src"></span><figure><img src="#" alt="weather icon" id="weathericon" />  <figcaption></figcaption></figure>
+             <hr>
+              <p>Wind Speed: <span id="s"></span> mph</p>
+              <p>Windchill: <span id="w"></span></p>
+            </section>
+          <section class="join">
+              <div class="joinInfo">
+              <h3>Join</h3>
+            
+            <p>Join the Bear Lake Chamber of Commerce and discover how we can help your business thrive!</p>
+            </div>
+            <div class="lowerJoinButton">
+            <button class="joinSection" onclick="window.location.href='join.html'">Join Us!</button>
+            </div>
+            </section>
+          <section class="news">
+              <h3>News Release</h3>
+            <p>Recent winter storms have been good for business in the Bear Lake area, 
+               bringing in 20% more tourists from last year during the slow winter season.
+               Though Bear Lake is often viewed as a summer destination, winter activities are bringing 
+               in a lot of business potential. <a href="#">Read More...</a>
+
+
+            </p>
+        </section>
+          <section class="spotlight">
+              <div class="spot1">
+              
+              </div>
+          </section>
+          
+          
+
+      </main>
+      <footer>
+          <section class= "upperFooter">
+              <div class="left-side">
+           <img src="./images/sail-logo-blue.webp" alt= "Bear Lake Chamber logo"/>
+           <div class="word-group">
+            <h2>Bear Lake Chamber of Commerce</h2>
+           <p class="address">69 N Paradise Pkwy, Garden City, UT 84028</p>
+           </div>
+           </div>
+           <div class="right-side">
+               <p>bearlakechamber@gmail.com</p>
+               <p>(435) 123-4567</p>
+               <p>
+               <a class="map" href="https://www.google.com/maps/place/Garden+City+City+Offices/@41.9469249,-111.4005836,17.25z/data=!4m12!1m6!3m5!1s0x8754122d8f722e2f:0xde4a180a34604d24!2sGarden+City+Park!8m2!3d41.9395548!4d-111.3913084!3m4!1s0x875413cc27a4cffd:0xd4d49e1330daa1cd!8m2!3d41.9480526!4d-111.4010108" target="blank">Location Map</a>
+            </p>
+            </div>
+        </section><hr>
+           <section class="bottomFooter">
+          &copy;
+            <span id=currentyear></span>
+            <span id="lastmod"></span>
+           </section>
+           <section class="attribution">Weather provided by <a href= "https://openweathermap.org/"> openweathermap.org</a></section> 
+      </footer>
+
+</body>

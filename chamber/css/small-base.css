@@ -1,0 +1,643 @@
+
+nav, h1, h2, h3, .date{
+    font-family: 'Archivo', sans-serif;
+}
+p, section, form{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color: #c5f0ec;
+    color: #112a46;
+ 
+}
+.headings{
+    text-align: center;
+}
+.social{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.social img{
+    width: 40px;
+    height: auto;
+}
+
+
+
+nav{
+    grid-column: 4/5;
+}
+
+.date{
+    display:grid;
+    grid-column: 1/5;
+    text-align: center;
+    background-color: #2e7595;
+    
+     padding: 10px;
+     color: white;
+}
+
+.logo{
+    width: 100px;
+    height: auto;
+    
+}
+
+ 
+ div h1{
+     margin: 0;
+     font-size: 1.5rem;
+   
+ }
+header h2{
+     font-size: 0;
+ }
+
+
+/*--------navigation--------*/
+
+#hamburgerButton{
+    display: flex;
+}
+
+nav button{
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #112a46;
+}
+
+
+nav ul{
+    display: none;
+     list-style-type: none;
+    padding: 0px;
+    margin: 0;
+     background-color: #c5f0ec; 
+}
+
+nav ul li a{
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: #112a46; 
+    
+}
+
+nav ul li a:hover{
+    background-color: #2e7595;
+    color: white;
+}
+
+nav ul.open{
+    display: block;
+    padding: 20px;
+  
+    text-align: center;
+    
+}
+nav a{
+    padding: 50px;
+}
+ ul#primaryNav.open{
+       position: absolute; 
+    left: 0px;
+     top: 22%;
+    z-index: 1;
+    width: 100%;
+     padding: 0; 
+ }
+nav ul li.active a{
+    background-color: #2e7595;
+    color: white;
+}
+
+
+#hamburgerButton span:nth-child(1){
+display: block;
+}
+#hamburgerButton span:nth-child(2){
+display: none;
+}
+
+#hamburgerButton.open span:nth-child(1){
+display: none;
+}
+#hamburgerButton.open span:nth-child(2){
+display: block;
+}
+/*--------end navigation---------*/
+
+
+/*--------main--------*/
+
+
+
+.event{
+
+    background-color: #c5f0ec;
+     margin: 5px;
+     padding: 20px;
+}
+.news{
+ background-color: #112a46;
+     margin: 5px; 
+     color: white; 
+     padding: 20px; 
+}
+
+.event h3 {
+    color: #112a46;
+   margin: 10px;
+    text-align: center;
+
+    font-size: 1.5rem;  
+}
+.weather h3 {
+    color: white;
+   margin: 10px;
+    text-align: center;
+    
+    font-size: 1.5rem;  
+}
+.join h3 {
+    color: white;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.5rem;  
+}
+.news h3 {
+    color: white;
+margin: 10px;
+    text-align: center;
+   
+    font-size: 1.5rem;  
+    margin: 0;
+}
+.spotlight h3 {
+    color: #112a46;
+    background-color: #c5f0ec;
+    text-align: center;
+   
+    font-size: 1.5rem; 
+    margin: 10px; 
+}
+
+.event h4{
+    text-align: center;
+}
+
+
+main p{
+    padding-left: 20px;
+    padding-right: 20px;
+  
+}
+main{
+    display:block;
+   
+}
+
+footer{
+    background-color: #c5f0ec;
+    color: #112a46;
+    padding-bottom: 20px;
+}
+
+.upperFooter{
+    display: block;
+    text-align: center;
+    justify-self: end;
+}
+
+
+footer .bottomFooter{
+text-align: center;
+}
+footer .attribution{
+text-align: center;
+font-size: .8rem;
+}
+.attribution a{
+    color: #0d7085;
+}
+
+footer h2{
+    font-size: 1.2rem;
+}
+.map{
+    color: #0d7085;
+}
+
+ul#primarynav.open{
+    display: block;
+}
+
+picture.heropic img{
+    width:100%; 
+    height: 100%;
+    object-fit: cover; 
+}
+
+.hero{
+    position: relative;
+    margin: 5px;
+    
+
+}
+
+
+.headerOverlay{
+    position: absolute;
+    top: 1px;
+    left: 30px;
+    color: #112a46;
+    font-size: 2rem;
+}
+.headerOverlay h2{
+    margin-top: 10px;;
+}
+
+.buttonOverlay{
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+}
+
+.joinButton{
+    border: none;
+  border-radius: 20px;
+  background-color: #e7c736;
+  padding: .8rem;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+  font-family: 'Archivo', sans-serif;
+
+}
+
+.joinButton:hover, .joinSection:hover{
+    background-color: #cdb02d;
+    
+}
+
+/*jsDate javascript to show on tuesdays and wednesdays*/
+#banner{
+    background-color: #e7c736;
+    padding: .6rem;
+    text-align: center;
+    font-family: 'Archivo', sans-serif;
+    display: none;
+    
+}
+
+
+
+/*end jsDate*/
+
+main{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.joinSection{
+       border: none;
+  border-radius: 20px;
+  background-color: #e7c736;
+  padding: .8rem 40px .8rem 40px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+  font-family: 'Archivo', sans-serif;
+
+}
+
+
+
+.spot1 section{
+    border: 1px solid #c5f0ec;
+    margin: 20px;
+    background-color: #c5f0ec; 
+    padding: 20px;  
+    text-align: center;
+}
+.spot1 img{
+    max-width: 35%;
+}
+
+
+.spotlight{
+       background-color: #2e7595;
+    margin:5px;
+    padding: 5px;
+}
+
+.weather{
+    background-color: #112a46;
+    margin: 5px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.join{
+    display: none;
+    color: white;
+}
+
+.event a{
+    color: #112a46;  
+}
+.news a{
+    color: white;
+}
+
+p #t{
+    font-size: 2rem;
+
+}
+
+/*discover page*/
+.discoverGrid{
+display: block;
+    margin-bottom: 30px;
+}
+.discoverGrid img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.discoverh1{
+   
+    text-align: center;
+    font-size: 3rem;
+    color: #112a46;
+}
+
+.discoverGrid section{
+    color: #112a46;
+    background-color: #c5f0ec;
+    margin-bottom: 10px;
+
+}
+.discoverGrid section h2{
+    text-align: center;
+    margin-top: 0px;
+    background-color: #112a46;
+    padding: 10px;
+    color: white;
+}
+.discoverGrid p{
+    margin-bottom: 40px;
+}
+.visited{
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/*placeholder---lazy load---*/
+ img[data-src] {
+  filter: blur(0.2em);
+}
+
+ img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+/*-----end lazy load---*/
+
+/*--------Join Form-------*/
+form fieldset{
+    margin: 1rem;
+    border: 1px solid #112a46;
+   padding: .5rem 2%;
+   
+  
+   
+}
+form legend{
+    color: #112a46;
+    margin: .5rem;
+    font-family: 'Archivo', sans-serif;
+}
+form label.top, form div{
+display:block;
+padding-top: 1rem;
+font-size: .8rem;
+}
+form label.top input, form label.top textarea{
+display: block;
+font-size: 16px;
+border: solid 1px #999;
+border-radius: 4px;
+padding: .75rem;
+color: black;
+max-width: 20rem;
+background-color: white;
+}
+form label.sbs{
+    display: block;
+    padding: .75rem 0;
+    color: #112a46;
+}
+form input.submitButton{
+    border: none;
+    background-color: #e7c736;
+    border-radius: 20px;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+    font-family: 'Archivo', sans-serif;
+        box-shadow: 5px 5px 5px rgb(0 0 0 / 50%)
+}
+form label.top input:required{
+    border-left: solid 3px red;
+}
+form label.top input:required:valid{
+    border-left: solid 3px green;
+}
+form{
+    background-color: #c5f0ec;
+    margin: 15px;
+   
+}
+form input.submitButton:hover{
+background-color: #cdb02d;
+}
+/*--------End Join Form-------*/
+.joinh1{
+    color: #112a46;
+    font-size: 48px;
+    grid-column: 1/3;
+    text-align: center;
+}
+.joingrid h2{
+    text-align: center;
+}
+
+.membership h2 {
+    text-align: center;
+}
+.joingrid{
+    display: block;
+   
+}
+.np, .silver{
+    background-color:#112a46 ;
+    padding: 10px;
+    padding-left: 25px;
+    color: white;
+    margin: 15px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.3rem;
+}
+.bronze, .gold{
+    background-color: #2e7595;
+    padding: 10px;
+    padding-left: 25px;
+    margin: 15px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.3rem;
+    color: white;
+}
+.mb{
+   color: #112a46;
+}
+
+/*Thanks*/
+.thanksh1, .thanksp{
+    text-align:center;
+    color: white;
+}
+.thanks{
+    padding: 40px;
+    background-color: #112a46;
+    margin: 10px 0;
+}
+
+/*-------directory------*/
+.cards section{
+    border: 20px solid #2e7595;
+    margin: 5px;
+    text-align: center;
+    justify-items: center;
+    background-color: #c5f0ec;
+    color: #112a46;
+
+}
+
+    .cards{
+    display: block;
+   
+   
+} 
+
+.directory-grid{
+       display: block;
+       margin-bottom: 20px;
+   }
+
+   .cards img{
+      max-width: 35%;
+      
+   }
+   
+
+   .directoryh1{
+    color: #112a46;
+    font-size: 48px;
+    text-align: center;
+}
+.listview-btn{
+    display: flex;
+    justify-content: center;
+    
+}
+.dirbtn:focus{
+    color: #2e7595;
+    border: 1px solid #2e7595;
+}
+.listview-btn button{
+margin:10px;
+padding: 10px;
+color: #112a46;
+font-family: 'Archivo', sans-serif;
+}
+
+
+.list-view img{
+display: none;
+}
+
+div.list-view{
+    display: block;
+}
+
+.list-view section{
+    
+    border: none;
+    padding: 10px;
+    text-align: left;
+    margin: 0 auto;
+    width: 100%;
+}
+.list-view section:nth-child(even){
+    background-color: #c5f0ec4a;
+    
+    
+}
+.list-view h2{
+    font-size: 1.2rem;
+}
+
+.contacth1{
+    grid-column: 1/5;
+     color: #112a46;
+    font-size: 48px;
+    text-align: center;
+}
+.contactinfo{
+    grid-column: 3/5;
+    text-align: center;
+}
+.contactform{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin:10px;
+}
+
+
+
+section.contactinfo{
+    background-color: #112a46;
+    
+    color: white;
+    align-items: center;
+   
+   
+    height: 96%;
+    margin:10px;
+
+
+    
+}
+
+.contactmain{
+    align-items: center;
+}
+
+
+.cinfo{
+    padding: 20px;}
+   
+h2.board{
+    font-size: 2em;
+}
+
