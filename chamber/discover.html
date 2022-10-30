@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce site discover page for Bear Lake Utah | WDD230 at BYU-I">
+    <title>Discover | Bear Lake Utah Chamber of Commerce</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script defer src="js/menu.js"></script>
+    <script defer src= "js/lazyload.js"></script>
+    <script defer src= "js/last-visited.js"></script>
+    
+   
+</head>
+<body>
+    <div id='banner'>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+      <header>
+            
+          <img class="logo" src="images/sail-logo-blue.webp" alt="Bear Lake Chamber logo"/>
+         <div class="headings">
+          <h1>BEAR LAKE</h1>
+          <h2>Chamber of Commerce</h2>
+         </div>
+         <div class="social">
+              <a href="https://facebook.com" target="_blank">
+                  <img src="images/facebook.png" alt="facebook logo">
+              </a>
+               <a href="https://www.linkedin.com/" target="_blank">
+                  <img src="images/LinkedIn.png" alt="LinkedIn logo">
+              </a>
+          </div>
+        <nav>
+            <button id="hamburgerButton"><span>&#9776;</span><span>X</span></button>
+          <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="discover.html">Discover</a></li>           
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li> 
+                <li><a href="contact.html">Contact</a></li> 
+            </ul>
+        </nav> 
+         </header>
+          <div class="date"></div>
+          <main class="discoverGrid">
+              <h1 class="discoverh1">Discover Beautiful Bear Lake!</h1>
+               <picture class="boat-img">
+                  <img src="images/placeholder.jpg" data-src="images/boating.jpg" alt="Sail boat on Bear Lake">
+              </picture>
+              <section class="boating">
+                  <h2>Bear Lake Views</h2>
+                  <p>From the mountains to the bright blue water, Bear Lake is not short on beautiful views.
+
+                  </p>
+              </section>
+
+                <picture class="rasp-img">
+                  <img src="images/placeholder.jpg" data-src="images/raspberry.jpg" alt="A box of fresh raspberries">
+              </picture>
+              <section class="raspberry">
+                  <h2>Raspberry Days</h2>
+                  <p>Bear lake is famous for raspberries. Indulge in a famous raspberry shake and visit 
+                      Bear Lake during our annual Raspberry Days, typically held in early August. </p>
+              </section>
+              
+                <picture class="surf-img">
+                  <img src="images/placeholder.jpg" data-src="images/surf.jpg" alt="Wakeboarding on Bear Lake">
+              </picture>
+              <section class="surf">
+                  <h2>Water Sports</h2>
+                  <p>Bear Lake is called the Carribean of the Rockies for a reason. 
+                      Get out on the water and try some of the awesome watersports available.</p>
+              </section>
+
+                 <picture class="atv-img">
+                  <img src="images/placeholder.jpg" data-src="images/atv.jpg" alt=" ATV in the mountains">
+              </picture>
+              <section class="atv">
+                  <h2>ATV's</h2>
+                  <p>Get off the beach and rent an ATV to see some amazing views in the mountains of Bear Lake.</p>
+              </section>
+           
+              <picture class="restaurant-img">
+                  <img src="images/placeholder.jpg" data-src="images/zipsrestaurant.jpg" alt="Zips restaurant in Bear Lake">
+              </picture>
+              <section class="restaurant">
+                  <h2>Restaurants</h2>
+                  <P>Bear Lake has a variety of fun and tasty restaurants to choose from. You can't go wrong choosing where to eat.
+                  </P>
+              </section>
+
+              <picture class="bike-img">
+                  <img src="images/placeholder.jpg" data-src="images/bike.jpg" alt="Mountain biking in Bear Lake">
+              </picture>
+                <section class="bike">
+                  <h2>Mountain Biking</h2>
+                  <p>Get back into the mountains and discover some amazing bike trails along the way.</p>
+              </section>
+            
+              <picture class="car-img">
+                  <img src= "images/placeholder.jpg" data-src="images/gocart.jpg" alt=" Kid in a go cart"> 
+              </picture>
+              <section class="car">
+                  <h2>Family Fun</h2>
+                  <p>Discover fun for the whole family with activities including the new ropes course in the canyon
+                       and go cart racing in garden city.</p>
+              </section>
+
+                   <picture class="marina-img">
+                  <img src="images/placeholder.jpg" data-src="images/marina.jpg" alt="Bear Lake Marina">
+              </picture>
+                <section class="marina">
+                  <h2>Bear Lake Marina</h2>
+                  <p>The perfect place to launch your boat or just admire the sail boats in the harbor.</p>
+              </section>
+           
+              <picture class="bear-img">
+                  <img src="images/placeholder.jpg" data-src="images/bear.jpg" alt="Bear carved out of wood">
+              </picture>
+              <section class="bear">
+                  <h2>Shopping</h2>
+                  <p>You can visit many shops around the area and find some unique gifts for loved ones or yourself. </p>
+              </section>
+              <p class="visited">Your last visit was <span id="lastvisited"></span> days ago.</p>
+
+          </main>
+             <footer>
+          <section class= "upperFooter">
+              <div class="left-side">
+           <img src="images/sail-logo-blue.webp" alt= "Bear Lake Chamber logo"/>
+           <div class="word-group">
+            <h2>Bear Lake Chamber of Commerce</h2>
+           <p class="address">69 N Paradise Pkwy, Garden City, UT 84028</p>
+           </div>
+           </div>
+           <div class="right-side">
+               <p>bearlakechamber@gmail.com</p>
+               <p>(435) 123-4567</p>
+               <p>
+               <a class="map" href="https://www.google.com/maps/place/Garden+City+City+Offices/@41.9469249,-111.4005836,17.25z/data=!4m12!1m6!3m5!1s0x8754122d8f722e2f:0xde4a180a34604d24!2sGarden+City+Park!8m2!3d41.9395548!4d-111.3913084!3m4!1s0x875413cc27a4cffd:0xd4d49e1330daa1cd!8m2!3d41.9480526!4d-111.4010108" target="blank">Location Map</a>
+            </p>
+            </div>
+        </section><hr>
+           <section class="bottomFooter">
+          &copy;
+            <span id=currentyear></span>
+            <span id="lastmod"></span>
+           </section>
+      </footer>
+          </body>
